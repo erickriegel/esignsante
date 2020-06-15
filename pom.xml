@@ -401,7 +401,7 @@
 								<checkModificationExclude>pom.xml.versionsBackup</checkModificationExclude>
 							</checkModificationExcludes>
 							<tagBase>http://scm-forge.asipsante.fr:18080/svn/tra/asip-sign-webservices/applicatif/tags</tagBase>
-							<tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat>
+							<!--tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat-->
 						</configuration>
 					</plugin>
 				</plugins>
