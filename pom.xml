@@ -400,7 +400,7 @@
 								<checkModificationExclude>pom.xml</checkModificationExclude>
 								<checkModificationExclude>pom.xml.versionsBackup</checkModificationExclude>
 							</checkModificationExcludes>
-							<tagBase>http://scm-forge.asipsante.fr:18080/svn/esignsante/esignsante-ws/webservices/applicatif/tags</tagBase>
+							<tagBase>http://scm-forge.asipsante.fr:18080/svn/esignsante/esignsante-ws/applicatif/tags</tagBase>
 							<tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat>
 						</configuration>
 						<dependencies>
