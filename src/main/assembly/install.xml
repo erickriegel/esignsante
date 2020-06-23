@@ -21,7 +21,7 @@
 			<directoryMode>755</directoryMode>
 			<fileMode>644</fileMode>
 			<directory>${project.basedir}/src/main/resources</directory>
-			<outputDirectory>conf</outputDirectory>
+			<outputDirectory/>
 			<includes>
 				<include>application.properties</include>
 				<include>config.json</include>
