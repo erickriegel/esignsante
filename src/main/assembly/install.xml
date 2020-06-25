@@ -8,16 +8,6 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
 		<fileSet>
-			<fileMode>644</fileMode>
-			<directoryMode>755</directoryMode>
-			<directory>${project.build.directory}</directory>
-			<outputDirectory>apps</outputDirectory>
-			<useDefaultExcludes>true</useDefaultExcludes>
-			<includes>
-				<include>*.jar</include>
-			</includes>
-		</fileSet>
-		<fileSet>
 			<directoryMode>755</directoryMode>
 			<fileMode>644</fileMode>
 			<directory>${project.basedir}/src/main/resources</directory>
