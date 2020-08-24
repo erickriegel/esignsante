@@ -12,7 +12,7 @@
             <PatternLayout pattern="${LOG_PATTERN}" />
         </Console>
         <!-- Rolling File Appender -->
-        <!--<RollingFile name="FileAppender"
+        <RollingFile name="FileAppender"
                      fileName="logs/esignsante.log" filePattern="logs/esignsante-%d{yyyy-MM-dd}.%i.log.gz">
             <PatternLayout>
                 <Pattern>${LOG_PATTERN}</Pattern>
@@ -21,20 +21,16 @@
                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
                 <SizeBasedTriggeringPolicy size="10 MB" />
             </Policies>
-        </RollingFile>-->
+        </RollingFile>
     </Appenders>
     <Loggers>
         <Logger name="fr.asipsante" level="info" additivity="false">
-<!--
             <AppenderRef ref="FileAppender" />
--->
             <AppenderRef ref="ConsoleAppender" />
         </Logger>
 
         <Root level="info">
-<!--
             <AppenderRef ref="FileAppender" />
--->
             <AppenderRef ref="ConsoleAppender" />
         </Root>
     </Loggers>
