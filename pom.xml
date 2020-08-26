@@ -5,12 +5,13 @@
 	<artifactId>esignsante-webservices</artifactId>
 	<packaging>jar</packaging>
 	<name>esignsante-webservices</name>
-	<version>2.4.0.3-SNAPSHOT</version>
+	<version>2.4.0.4-SNAPSHOT</version>
 	<properties>
 		<java.version>1.8</java.version>
 		<springfox-version>2.9.2</springfox-version>
 		<servlet-api.version>4.0.1</servlet-api.version>
 		<start-class>fr.asipsante.api.sign.ws.Application</start-class>
+		<dist>docker</dist>
 	</properties>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -18,9 +19,14 @@
 		<version>2.3.3.RELEASE</version>
 	</parent>
 	<!--<scm>
-		<developerConnection>scm:svn:http://scm-forge.asipsante.fr:18080/svn/esignsante/esignsante-ws/applicatif/branches/esignsante-webservices-L3</developerConnection>
+		<developerConnection>scm:svn:http://scm-forge.asipsante.fr:18080/svn/esignsante/esignsante-ws/applicatif/branches/esignsante-webservices-jar</developerConnection>
 	</scm>-->
 	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources/${dist}</directory>
+			</resource>
+		</resources>
 		<sourceDirectory>src/main/java</sourceDirectory>
 		<testResources>
 			<testResource>
@@ -174,10 +180,6 @@
 					</from>
 					<to>
 						<image>${image.registry}/cybersante/esignsante</image>
-						<!--<auth>
-							<username>jenkins</username>
-							<password>Cr3vetUs</password>
-						</auth>-->
 						<tags>
 							<tag>latest</tag>
 							<tag>${project.version}</tag>
@@ -223,7 +225,7 @@
 		<dependency>
 			<groupId>fr.asipsante.api.sign</groupId>
 			<artifactId>asip-sign-api</artifactId>
-			<version>2.3.0.10-RELEASE</version>
+			<version>2.3.0.13-RELEASE</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.slf4j</groupId>
