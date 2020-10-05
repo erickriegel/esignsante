@@ -154,6 +154,15 @@
 						<descriptor>src/main/assembly/directories.xml</descriptor>
 					</descriptors>
 				</configuration>
+				<executions>
+					<execution>
+						<id>dist-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -428,13 +437,6 @@
 								<id>parse-version</id>
 								<goals>
 									<goal>parse-version</goal>
-								</goals>
-							</execution>
-							<execution>
-								<id>dist-assembly</id>
-								<phase>package</phase>
-								<goals>
-									<goal>single</goal>
 								</goals>
 							</execution>
 						</executions>
