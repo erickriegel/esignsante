@@ -204,9 +204,9 @@
 							<port>8080</port>
 						</ports>
 						<format>Docker</format>
-						<!--<creationTime>USE_CURRENT_TIMESTAMP</creationTime>
-						this sacrifices reproducibility since the timestamp will change with every build-->
-						<creationTime>2020-09-01T10:15:30+09:00</creationTime>
+						<!--this sacrifices reproducibility since the timestamp will change with every build-->
+						<creationTime>USE_CURRENT_TIMESTAMP</creationTime>
+						<!--<creationTime>2020-09-01T10:15:30+09:00</creationTime>-->
 					</container>
 					<allowInsecureRegistries>true</allowInsecureRegistries>
 				</configuration>
@@ -214,6 +214,19 @@
 		</plugins>
 	</build>
 	<dependencies>
+		<!--The vintage engine allows tests written with JUnit 4 to be run by JUnit 5.
+		It would be a good idea to migrate your tests to JUnit 5-->
+		<dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.hamcrest</groupId>
+					<artifactId>hamcrest-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
