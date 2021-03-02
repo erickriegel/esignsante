@@ -175,11 +175,11 @@
 				<version>2.1.0</version>
 				<configuration>
 					<from>
-						<image>${docker.registry}/openjdk:11-slim-buster</image>
+						<image>${docker.registry}/eriegel/openjdk:11-slim-buster</image>
 						<!--<image>openjdk:11-slim-buster</image>-->
 					</from>
 					<to>
-						<image>${image.registry}/cybersante/esignsante</image>
+						<image>${image.registry}/eriegel/cybersante/esignsante</image>
 						<tags>
 							<tag>latest</tag>
 							<tag>${project.version}</tag>
@@ -403,8 +403,10 @@
 				<artifactory.hostname>https://repo.forge.ans.henix.fr/</artifactory.hostname>
 -->
 				<ldap.server.url>ldap://annuaire.asipsante.fr</ldap.server.url>
-				<docker.registry>registry.repo.forge.ans.henix.fr</docker.registry>
-				<image.registry>esignsante-registry.repo.forge.ans.henix.fr</image.registry>
+				<!--docker.registry>registry.repo.forge.ans.henix.fr</docker.registry-->
+				<docker.registry>registry.repo.docker.proxy-prod-forge.asip.hst.fluxus.net</docker.registry>
+				<!--image.registry>esignsante-registry.repo.forge.ans.henix.fr</image.registry-->
+				<image.registry>registry.repo.docker.proxy-prod-forge.asip.hst.fluxus.net</image.registry>
 			</properties>
 			<distributionManagement>
 				<repository>
