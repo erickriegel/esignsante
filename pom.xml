@@ -175,11 +175,11 @@
 				<version>2.1.0</version>
 				<configuration>
 					<from>
-						<image>${docker.registry}/eriegel/openjdk:11-slim-buster</image>
-						<!--<image>openjdk:11-slim-buster</image>-->
+						<!--image>${docker.registry}/openjdk:11-slim-buster</image-->
+						<image>openjdk:11-slim-buster</image>
 					</from>
 					<to>
-						<image>${image.registry}/eriegel/cybersante/esignsante</image>
+						<image>${image.registry}/cybersante/esignsante</image>
 						<tags>
 							<tag>latest</tag>
 							<tag>${project.version}</tag>
