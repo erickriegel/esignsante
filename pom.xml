@@ -5,7 +5,7 @@
 	<artifactId>esignsante-webservices</artifactId>
 	<packaging>jar</packaging>
 	<name>esignsante-webservices</name>
-	<version>0.3.3.5-SNAPSHOT</version>
+	<version>0.3.3.5</version>
 	<properties>
 		<java.version>1.8</java.version>
 		<asipsign.version>2.4.0.2</asipsign.version>
@@ -20,7 +20,7 @@
 		<version>2.6.0-M1</version>
 	</parent>
 	<scm>
-		<developerConnection>${developperConnectionJenkinsfile}</developerConnection>  
+		<developerConnection>scm:svn:http://scm-forge.asipsante.fr:18080/svn/esignsante/esignsante-ws/applicatif/tags/esignsante-webservices-0.3.3.5</developerConnection>  
 	</scm>
 	<build>
 		<resources>
