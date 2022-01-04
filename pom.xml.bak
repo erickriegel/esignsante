@@ -5,7 +5,7 @@
 	<artifactId>esignsante-webservices</artifactId>
 	<packaging>jar</packaging>
 	<name>esignsante-webservices</name>
-	<version>2.5.0.14-SNAPSHOT</version>
+	<version>2.5.0.13-SNAPSHOT</version>
 	<properties>
 		<java.version>1.8</java.version>
 		<asipsign.version>2.4.0.4</asipsign.version>
@@ -17,7 +17,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.6</version>
+		<version>2.6.2</version>
 	</parent>
 	<scm>
 		<developerConnection>${developperConnectionJenkinsfile}</developerConnection>
@@ -266,16 +266,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.logging.log4j</groupId>
-					<artifactId>log4j-to-slf4j</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.logging.log4j</groupId>
-					<artifactId>log4j-api</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>io.micrometer</groupId>
