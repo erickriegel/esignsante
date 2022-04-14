@@ -6,7 +6,7 @@ labels = { "domaine" = "esignsante" }
 runner {
   enabled = true
   data_source "git" {
-    url = "https://github.com/ansforge/esignsante-ws.git"
+    url = "https://rhodecode.proxy.dev.forge.esante.gouv.fr/ApplicationsANS/Transverse/esignsante/esignsante-ws/applicatif.git"
     ref = var.datacenter
   }
   poll {
